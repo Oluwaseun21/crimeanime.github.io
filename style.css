@@ -1,0 +1,1485 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+display: flex;
+min-height: 100vh;
+justify-content: center;
+align-items: center;
+background-color: rgb(104, 104, 2); 
+/*rgb(235, 235, 7);*/overflow: hidden;
+}
+
+.wrapper{
+    max-width: 80%;
+    width: 50%;
+    max-height: 650px;
+   /* height: 80%;*/
+    padding: 65px 10px;
+    margin: 10px;
+    position: relative;
+    box-shadow:inset 0px 0px 15px yellow;
+    background-color: black;
+    background-image: url('assets/11.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;  
+}
+
+#text a{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(255, 174, 0);
+    cursor: default;
+}
+
+#text{
+    position:absolute;
+    background-color: yellow;
+    padding: 5px 5px;
+    border-radius: 8px;
+    border: 1px solid yellow;
+    transform: rotate(90deg);
+    top: 10.5%;
+    right: 17.8%;
+    box-shadow: inset 0 0 10px red;
+    z-index: -1;
+    animation: anim 5s steps(12) infinite;
+}
+
+
+
+@keyframes anim {
+    from{
+        transform: translateY(0) rotate(90deg);
+    }
+
+    to{
+        transform: translateY(1230%) rotate(90deg);
+    }
+}
+
+
+/*.copy{
+    transform: rotate(90deg) translate(2rem,9rem);
+}*/
+
+#light{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #fff,
+    0 0 50px #fff,
+    0 0 100px #fff,
+    0 0 200px #fff,
+    0 0 300px #fff;
+}
+
+
+
+
+
+
+
+
+
+.one{
+    position: relative;
+    right: 0;
+    bottom: 3rem;
+    /*margin: 50px 5px 0px 5px;  up left down right */
+    }
+
+.two{
+    position: relative;
+    right: 2px;
+    top: 20rem;
+    z-index: 2;
+    /*margin: 200px 5px 0px 5px;  up left down right */
+    }
+
+.three{
+    position: relative;
+    top: 2rem;  
+}
+
+    .left{
+    position: relative;
+    bottom: 7.5rem;
+    transform: rotate(90deg) translateY(180px) translateX(-300px);
+    width: 95%;
+}
+
+    .right{
+        position: relative;
+        bottom: 9.5rem;
+        transform: rotate(90deg) translateY(-220px) translateX(-430px);
+        width: 95%;
+        }
+    
+
+                        /*     ALL-UP-ONE-SECTION      */
+                        /*     REAL NUMBER ONE     */
+/*----------------------CRIME-5 UP-SECTION small-banner---------------------------------*/
+.crime-5{
+    position: relative;
+    background-color: rgb(235, 235, 7);
+    white-space: nowrap; 
+    height: 20px;
+    overflow: hidden;
+    transform: rotate(360deg) translateY(-86px);
+    z-index: 2000;
+}
+
+
+.crime-5::before,
+.crime-5::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    z-index: 2;   
+}
+
+.crime-5::before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-5::after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-5:hover .scene-5{
+    animation-play-state: paused;
+}
+
+.scene-5 span{
+    margin: 0 10px;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.scene-5{
+    animation: movement-5 5s infinite linear;
+}
+
+@keyframes movement-5 {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+                             /*     REAL NUMBER TWO     */  
+/*----------------------CRIME-6 UP-SECTION small-banner---------------------------------*/
+.crime-6{
+    position: relative;
+    background-color:rgb(235, 235, 7);
+    white-space: nowrap; 
+    height: 20px;
+    overflow: hidden;
+    transform: rotate(360deg) translateY(-86px);
+}
+
+
+.crime-6::before,
+.crime-6::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    z-index: 2;   
+}
+
+.crime-6::before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-6::after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-6:hover .scene-6{
+    animation-play-state: paused;
+}
+
+.scene-6 span{
+    margin: 0 10px;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.scene-6{
+    animation: movement-6 5s infinite linear;
+}
+
+@keyframes movement-6 {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+
+
+                            /*     REAL NUMBER THREE     */  
+/*----------------------CRIME-1 UP-SECTION BIG-BANNER---------------------------------*/
+
+.crime-1{
+    position: relative;
+    background-color: rgb(235, 235, 7);
+    white-space: nowrap; 
+    padding: 5px 0;
+    margin: 20px 0;
+    height: 80px;
+    overflow: hidden;
+    transform: rotate(360deg) translateY(40px);
+}
+
+.crime-1::before,
+.crime-1::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    z-index: 2;   
+}
+
+.crime-1::before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-1::after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-1:hover .scene-1{
+    animation-play-state: paused;
+}
+
+.scene-1 span{
+    margin: 0 10px;
+    font-size: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.scene-1{
+    animation: movement-1 5s infinite linear;
+}
+
+@keyframes movement-1 {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+
+                        /*     REAL NUMBER FOUR     */
+/*----------------------CRIME-7 UP-SECTION small-banner---------------------------------*/
+.crime-7{
+    position: relative;
+    background-color:rgb(235, 235, 7);
+    white-space: nowrap; 
+    height: 20px;
+    overflow: hidden;
+    transform: rotate(360deg) translateY(-35px);
+}
+
+
+.crime-7::before,
+.crime-7::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    z-index: 2;   
+}
+
+.crime-7::before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-7::after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-7:hover .scene-7{
+    animation-play-state: paused;
+}
+
+.scene-7 span{
+    margin: 0 10px;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.scene-7{
+    animation: movement-7 5s infinite linear;
+}
+
+@keyframes movement-7 {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+                                /*     REAL NUMBER FIVE     */
+     /*----------------------CRIME-8 UP-SECTION small-banner---------------------------------*/
+     .crime-8{
+    position: relative;
+    background-color: rgb(235, 235, 7);
+    white-space: nowrap; 
+    height: 20px;
+    overflow: hidden;
+    transform: rotate(360deg) translateY(-35px);
+    z-index: 2000;
+}
+
+
+.crime-8::before,
+.crime-8::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    z-index: 2;   
+}
+
+.crime-8::before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-8::after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-8:hover .scene-8{
+    animation-play-state: paused;
+}
+
+.scene-8 span{
+    margin: 0 10px;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.scene-8{
+    animation: movement-8 5s infinite linear;
+}
+
+@keyframes movement-8 {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+
+
+
+
+
+                            /*     ALL-DOWN-TWO-SECTION     */
+                            /*     REAL NUMBER ONE     */
+  /*----------------------CRIME-9 DOWN-SECTION small-banner---------------------------------*/
+  .crime-9{
+    position: relative;
+    background-color: rgb(235, 235, 7);
+    white-space: nowrap; 
+    height: 20px;
+    overflow: hidden;
+    transform: rotate(360deg) translateX(2px) translateY(-230px);
+}
+
+
+.crime-9::before,
+.crime-9::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    z-index: 2;   
+}
+
+.crime-9::before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-9::after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-9:hover .scene-9{
+    animation-play-state: paused;
+}
+
+.scene-9 span{
+    margin: 0 10px;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.scene-9{
+    animation: movement-9 5s infinite linear;
+}
+
+@keyframes movement-9 {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+                            /*     REAL NUMBER TWO     */
+/*----------------------CRIME-10 DOWN-SECTION small-banner---------------------------------*/
+.crime-10{
+    position: relative;
+    background-color: rgb(235, 235, 7);
+    white-space: nowrap; 
+    height: 20px;
+    overflow: hidden;
+    transform: rotate(360deg) translateX(2px) translateY(-235px);
+}
+
+
+.crime-10::before,
+.crime-10::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    z-index: 2;   
+}
+
+.crime-10::before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-10::after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-10:hover .scene-10{
+    animation-play-state: paused;
+}
+
+.scene-10 span{
+    margin: 0 10px;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.scene-10{
+    animation: movement-10 5s infinite linear;
+}
+
+@keyframes movement-10 {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+                            /*     REAL NUMBER THREE     */
+ /*----------------------CRIME-3 DOWN-SECTION BIG-BANNER---------------------------------*/
+
+ .crime-3{
+    background-color: rgb(235, 235, 7);
+    white-space: nowrap; 
+    padding: 5px 0;
+    margin: 20px 0;
+    height: 80px;
+    overflow: hidden;
+    transform: rotate(360deg) translateX(2px) translateY(-110px);
+}
+
+
+.crime-3::before,
+.crime-3::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    z-index: 2;   
+}
+
+.crime-3::before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-3::after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-3:hover .scene-3{
+    animation-play-state: paused;
+}
+
+.scene-3 span{
+    margin: 0 10px;
+    font-size: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.scene-3{
+    animation: movement-3 5s infinite linear;
+}
+
+@keyframes movement-3 {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+                            /*     REAL NUMBER FOUR     */
+/*----------------------CRIME-11 DOWN-SECTION small-banner---------------------------------*/
+.crime-11{
+    position: relative;
+    background-color: rgb(235, 235, 7);
+    white-space: nowrap; 
+    height: 20px;
+    overflow: hidden;
+    transform: rotate(360deg) translateX(2px) translateY(-187px);
+}
+
+
+.crime-11::before,
+.crime-11::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    z-index: 2;   
+}
+
+.crime-11::before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-11::after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-11:hover .scene-11{
+    animation-play-state: paused;
+}
+
+.scene-11 span{
+    margin: 0 10px;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.scene-11{
+    animation: movement-11 5s infinite linear;
+}
+
+@keyframes movement-11 {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+                            /*     REAL NUMBER FIVE     */
+ /*----------------------CRIME-12 DOWN-SECTION small-banner---------------------------------*/
+ .crime-12{
+    position: relative;
+    background-color: rgb(235, 235, 7);
+    white-space: nowrap; 
+    height: 20px;
+    overflow: hidden;
+    transform: rotate(360deg) translateX(2px) translateY(-187px);
+}
+
+
+.crime-12::before,
+.crime-12::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    z-index: 2;   
+}
+
+.crime-12::before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-12::after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-12:hover .scene-12{
+    animation-play-state: paused;
+}
+
+.scene-12 span{
+    margin: 0 10px;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.scene-12{
+    animation: movement-12 5s infinite linear;
+}
+
+@keyframes movement-12 {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+                            /*     ALL-DOWN-THREE-SECTION    */
+                            /*     REAL NUMBER ONE     */
+  /*----------------------CRIME-17 DOWN-SECTION small-banner---------------------------------*/
+  .crime-17{
+    position: relative;
+    background-color: rgb(235, 235, 7);
+    white-space: nowrap; 
+    height: 20px;
+    overflow: hidden;
+    transform: rotate(360deg) translateX(2px) translateY(-230px);
+    
+}
+
+
+.crime-17::before,
+.crime-17::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    z-index: 2;   
+}
+
+.crime-17::before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-17::after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-17:hover .scene-17{
+    animation-play-state: paused;
+}
+
+.scene-17 span{
+    margin: 0 10px;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.scene-17{
+    animation: movement-17 5s infinite linear;
+}
+
+@keyframes movement-17 {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+                            /*     REAL NUMBER TWO     */
+/*----------------------CRIME-18 DOWN-SECTION small-banner---------------------------------*/
+.crime-18{
+    position: relative;
+    background-color: rgb(235, 235, 7);
+    white-space: nowrap; 
+    height: 20px;
+    overflow: hidden;
+    transform: rotate(360deg) translateX(2px) translateY(-235px);
+    z-index: 2000;
+}
+
+
+.crime-18::before,
+.crime-18::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    z-index: 2;   
+}
+
+.crime-18::before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-18::after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-18:hover .scene-18{
+    animation-play-state: paused;
+}
+
+.scene-18 span{
+    margin: 0 10px;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.scene-18{
+    animation: movement-18 5s infinite linear;
+}
+
+@keyframes movement-18 {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+                            /*     REAL NUMBER THREE     */
+ /*----------------------CRIME-19 DOWN-SECTION BIG-BANNER---------------------------------*/
+
+ .crime-19{
+    background-color: rgb(235, 235, 7);
+    white-space: nowrap; 
+    padding: 5px 0;
+    margin: 20px 0;
+    height: 80px;
+    overflow: hidden;
+    transform: rotate(360deg) translateX(2px) translateY(-270px);
+}
+
+
+.crime-19::before,
+.crime-19::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    z-index: 2;   
+}
+
+.crime-19::before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-19::after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-19:hover .scene-19{
+    animation-play-state: paused;
+}
+
+.scene-19 span{
+    margin: 0 10px;
+    font-size: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.scene-19{
+    animation: movement-19 5s infinite linear;
+}
+
+@keyframes movement-19 {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+                            /*     REAL NUMBER FOUR     */
+/*----------------------CRIME-20 DOWN-SECTION small-banner---------------------------------*/
+.crime-20{
+    position: relative;
+    background-color: rgb(235, 235, 7);
+    white-space: nowrap; 
+    height: 20px;
+    overflow: hidden;
+    transform: rotate(360deg) translateX(2px) translateY(-307px);
+    z-index: 2000;
+}
+
+
+.crime-20::before,
+.crime-20::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    z-index: 2;   
+}
+
+.crime-20::before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-20::after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-20:hover .scene-20{
+    animation-play-state: paused;
+}
+
+.scene-20 span{
+    margin: 0 10px;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.scene-20{
+    animation: movement-20 5s infinite linear;
+}
+
+@keyframes movement-20 {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+                            /*     REAL NUMBER FIVE     */
+ /*----------------------CRIME-21 DOWN-SECTION small-banner---------------------------------*/
+ .crime-21{
+    position: relative;
+    background-color: rgb(235, 235, 7);
+    white-space: nowrap; 
+    height: 20px;
+    overflow: hidden;
+    transform: rotate(360deg) translateX(2px) translateY(-307px);
+}
+
+
+.crime-21::before,
+.crime-21::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    z-index: 2;   
+}
+
+.crime-21::before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-21::after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-21:hover .scene-21{
+    animation-play-state: paused;
+}
+
+.scene-21 span{
+    margin: 0 10px;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.scene-21{
+    animation: movement-21 5s infinite linear;
+}
+
+@keyframes movement-21 {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+                             /*     ALL-LEFT-SECTION    */ 
+                             /*     LEFT NUMBER ONE     */
+ /*----------------------CRIME-13 LEFT-SECTION small-banner--------------transform: rotate(90deg) translateX(-242px) translateY(117px);-------------------*/
+
+.crime-13{
+    position: relative;
+    background-color: rgb(235, 235, 7);
+    white-space: nowrap; 
+    height: 20px;
+    overflow: hidden;
+    transform: rotate(360deg) translateX(0px) translateY(37px);
+    z-index: 1;
+}
+
+
+.crime-13::before,
+.crime-13::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 20px;
+    z-index: 2;   
+}
+
+.crime-13::before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-13::after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-13:hover .scene-13{
+    animation-play-state: paused;
+}
+
+.scene-13 span{
+    margin: 0 10px;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.scene-13{
+    animation: movement-13 5s infinite linear;
+}
+
+@keyframes movement-13 {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+                             /*     LEFT NUMBER TWO     */
+ /*----------------------CRIME-2 LEFT-SECTION BIG-BANNER---------------------------------*/
+
+.crime-2{
+    position: relative;
+    background-color:rgb(235, 235, 7);
+    white-space: nowrap; 
+    padding: 5px 0;
+    margin: 20px 0;
+    height: 80px;
+    overflow: hidden;
+    /*transform: rotate(90deg) translateX(188px) translateY(50px);*/
+}
+
+
+.crime-2::before,
+.crime-2::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    z-index: 2;   
+}
+
+.crime-2::before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-2::after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-2:hover .scene-2{
+    animation-play-state: paused;
+}
+
+.scene-2 span{
+    margin: 0 10px;
+    font-size: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.scene-2{
+    animation: movement-2 5s infinite linear;
+}
+
+@keyframes movement-2 {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+                         
+                            /*     LEFT NUMBER THREE    */
+  /*----------------------CRIME-14 LEFT-SECTION small banner---------------------------------*/
+
+  .crime-14{
+    position: relative;
+    background-color: rgb(235, 235, 7);
+    white-space: nowrap; 
+    height: 20px;
+    overflow: hidden;
+    transform: rotate(360deg) translateX(0px) translateY(-37px);
+}
+
+
+.crime-14::before,
+.crime-14::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    z-index: 2;   
+}
+
+.crime-14::before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-14::after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-14:hover .scene-14{
+    animation-play-state: paused;
+}
+
+.scene-14 span{
+    margin: 0 10px;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.scene-14{
+    animation: movement-14 5s infinite linear;
+}
+
+@keyframes movement-14 {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+
+
+                              /*     ALL-RIGHT-SECTION    */ 
+                              /*     RIGHT NUMBER ONE     */
+ /*----------------------CRIME-15 RIGHT-SECTION small-banner---------------------------------*/
+
+ .crime-15{
+    position: relative;
+    background-color: rgb(235, 235, 7);
+    white-space: nowrap; 
+    height: 20px;
+    overflow: hidden;
+    transform: rotate(360deg) translateX(0px) translateY(35px);
+    z-index: 2000;
+ /* transform: rotate(90deg) translateX(-280px) translateY(-185px);*/
+}
+
+
+.crime-15::before,
+.crime-15::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    z-index: 2;   
+}
+
+.crime-15::before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-15::after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-15:hover .scene-15{
+    animation-play-state: paused;
+}
+
+.scene-15 span{
+    margin: 0 10px;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.scene-15{
+    animation: movement-15 5s infinite linear;
+}
+
+@keyframes movement-15 {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+                             /*     RIGHT NUMBER TWO     */
+ /*----------------------CRIME-4 RIGHT-SECTION BIG-BANNER---------------------------------*/
+
+ .crime-4{
+    position: relative;
+    background-color: rgb(235, 235, 7);
+    white-space: nowrap; 
+    padding: 5px 0;
+    margin: 20px 0;
+    height: 80px;
+    overflow: hidden;
+   /* transform: rotate(90deg) translateX(-10px) translateY(-150px);*/
+}
+
+
+.crime-4::before,
+.crime-4::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    z-index: 2;   
+}
+
+.crime-4::before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-4::after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-4:hover .scene-4{
+    animation-play-state: paused;
+}
+
+.scene-4 span{
+    margin: 0 10px;
+    font-size: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.scene-4{
+    animation: movement-4 5s infinite linear;
+}
+
+@keyframes movement-4 {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+
+
+  
+
+
+
+
+                            /*     RIGHT NUMBER THREE     */
+ /*----------------------CRIME-16 RIGHT-SECTION small-banner---------------------------------*/
+
+ .crime-16{
+    position: relative;
+    background-color: rgb(235, 235, 7);
+    white-space: nowrap; 
+    height: 20px;
+    overflow: hidden;
+    transform: rotate(360deg) translateX(0px) translateY(-35px);
+    z-index: 2000;
+ /* transform: rotate(90deg) translateX(-300px) translateY(-116px);*/
+}
+
+
+.crime-16::before,
+.crime-16::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    z-index: 2;   
+}
+
+.crime-16::before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-16::after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgb(235, 235, 7)); 
+}
+
+.crime-16:hover .scene-16{
+    animation-play-state: paused;
+}
+
+.scene-16 span{
+    margin: 0 10px;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.scene-16{
+    animation: movement-16 5s infinite linear;
+}
+
+@keyframes movement-16 {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+/*................................................BREAK-POINTS..................................................................................*/
+
+@media (max-width:1300px){
+    body{
+        background-color: pink;
+    }
+
+    .wrapper{
+        background-image: url('assets/12.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .right{
+        margin-left: -15px;
+    }
+
+    .two{
+        width: 100.5%;
+    }
+    #text{
+        margin: 0px -30px;
+        box-shadow:inset 0 0 10px rgb(245, 33, 68);
+    }
+
+    #text a{
+        color: rgb(240, 54, 85);
+    }
+}
+
+@media(max-width:1000px){
+    body{
+      background-color: rgb(97, 1, 89);   
+    }
+
+    .wrapper{
+        background-image: url('assets/13.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+   .left,.right{
+    display: none;
+   }
+
+   #text{
+    margin: 0px -45px;
+    background-color: rgba(248, 187, 248, 0.801);
+    box-shadow: inset 0 0 10px yellow;
+}
+#text a{
+    color: #faf606;
+}
+}
+
+
+
+@media(max-width:768px){
+    body{
+        background-color: rgb(6, 115, 148);   
+      }
+      .wrapper{
+        background-image: url('assets/14.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+      #text{
+        margin: 0px -55px;
+      }
+}
+
+@media(max-width:600px){
+    body{
+        background-color: rgb(255, 38, 0);   
+      }
+
+      .wrapper{
+        background-image: url('assets/15.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .one,.two,.three{
+        width: 100%;
+    }
+      .left,.right{
+        display: none;
+      }
+      
+      #text{
+        margin: 0px -63px;
+        background-color: rgba(8, 8, 1, 0.801);
+    box-shadow: inset 0 0 20px rgb(248, 246, 246);
+
+      }
+}
+
